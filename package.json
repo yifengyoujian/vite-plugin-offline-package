@@ -1,0 +1,35 @@
+{
+  "name": "vite-plugin-offline-package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/index.js",
+      "import": "./dist/index.mjs",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "LICENSE"
+  ],
+  "scripts": {
+    "dev": "npm run build -- --watch --ignore-watch examples",
+    "build": "tsup"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.15.5",
+    "jszip": "^3.10.1",
+    "tsup": "^6.7.0",
+    "typescript": "^5.0.2"
+  },
+  "dependencies": {
+    "vite": "^4.2.1"
+  }
+}
